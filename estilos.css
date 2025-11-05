@@ -1,0 +1,98 @@
+body {
+  font-family: 'Montserrat', Arial, sans-serif;
+  margin: 0;
+  background: #fafafa;
+}
+
+header {
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.10);
+}
+
+.container-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 4vw;
+}
+
+.logo img {
+  height: 80px; /* o el tamaño que prefieras */
+  width: auto;
+}
+
+nav ul {
+  display: flex;
+  gap: 18px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #d92622;
+  font-weight: 600;
+  padding: 10px 18px;
+  border-radius: 4px;
+  transition: background .2s;
+}
+
+nav a:hover {
+  background: #fbeaea;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #d92622;
+  color: #fff;
+  padding: 40px 0 60px 0;
+}
+
+.hero-content {
+  max-width: 40vw;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.hero .boton-principal {
+  display: inline-block;
+  margin-top: 18px;
+  background: #ffe174;
+  color: #c50000;
+  font-weight: bold;
+  padding: 13px 40px;
+  border-radius: 6px;
+  border: none;
+  font-size: 1.1rem;
+  transition: background .2s;
+  text-decoration: none;
+}
+
+.hero .boton-principal:hover {
+  background: #ffd23f;
+}
+
+.car-img {
+  width: 390px;
+  height: auto;
+  border-radius: 16px;
+}
+
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .car-img {
+    width: 80vw;
+    margin-top: 24px;
+  }
+}
