@@ -121,7 +121,7 @@ nav a:hover {
 }
 .detalle-reserva img {
   width: 70%;
-  max-width: 340px;
+  max-width: 200px;
   border-radius: 10px;
   margin-bottom: 10px;
 }
