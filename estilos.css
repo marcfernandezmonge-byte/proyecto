@@ -2,6 +2,8 @@ body {
   font-family: 'Montserrat', Arial, sans-serif;
   margin: 0;
   background: #fafafa;
+  background-color: #0f1c2e; /* Azul galaxia aproximado */
+
 }
 
 header {
@@ -14,6 +16,8 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 10px 4vw;
+  background-color: #0f1c2e; /* Azul galaxia aproximado */
+
 }
 
 .logo img {
@@ -31,26 +35,29 @@ nav ul {
 
 nav a {
   text-decoration: none;
-  color: #d92622;
+  color: #ffffff;
   font-weight: 600;
   padding: 10px 18px;
   border-radius: 4px;
   transition: background .2s;
+  background: linear-gradient(to bottom, #0f1c2e, #1a2a40);
+
 }
 
 nav a:hover {
-  background: #fbeaea;
+  background: #1a2a40;
 }
 
 .hero {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: #c50000;
+ 
+  background-color: #0f1c2e; /* Azul galaxia aproximado */
   /*background-image: url('asfalto_fondo.jpg');
   /*background-size: cover;       /* Ajusta la imagen para cubrir todo el div */
   /*background-position: center;  /* Centra la imagen */
-  color: #000000;
+  color: #ffffff;
   padding: 40px 0 60px 0;
 }
 
@@ -69,8 +76,8 @@ nav a:hover {
 .hero .boton-principal {
   display: inline-block;
   margin-top: 18px;
-  background: #ffe174;
-  color: #c50000;
+  /*background: #ffe174;*/
+  color: #ffffff;
   font-weight: bold;
   padding: 13px 40px;
   border-radius: 6px;
@@ -78,14 +85,16 @@ nav a:hover {
   font-size: 1.1rem;
   transition: background .2s;
   text-decoration: none;
+  background: linear-gradient(to bottom, #0f1c2e, #1a2a40);
+
 }
 
 .hero .boton-principal:hover {
-  background: #ffd23f;
+  background: #1a2a40;
 }
 
 .car-img {
-  width: 390px;
+  width: 590px;
   height: auto;
   border-radius: 16px;
 }
