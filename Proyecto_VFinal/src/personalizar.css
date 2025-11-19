@@ -1,0 +1,222 @@
+body {
+      background-color: #0f1c2e; /* Azul galaxia aproximado */
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      height: 100vh;
+  }
+.content-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  padding: 0 5%;
+  box-sizing: border-box;
+}
+
+/* Simulación de imagen del coche */
+#threeD-container {
+  width: 65%;
+  height: 75%;
+  background-color: #1a2a40; /* color sólido como placeholder */
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+/* Panel lateral de botones */
+.panel-personalizacion {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+    /* Botón arriba a la izquierda */
+.volver-container {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.volver-container {
+  background: linear-gradient(to bottom, #0f1c2e, #1a2a40);
+  display: inline-block;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background .2s;
+}
+
+.volver-container:hover {
+  background: #1a2a40;
+  filter: brightness(110%);
+  
+}
+
+/* Footer con botón abajo */
+.footer-navegacion {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.siguiente {
+  background: linear-gradient(to bottom, #0f1c2e, #1a2a40);
+  display: inline-block;
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background .2s;
+}
+
+
+.siguiente:hover {
+   background: #1a2a40;
+  filter: brightness(110%);
+}
+
+
+    .opcion {
+      display: flex;
+      align-items: center;
+      gap: 12px; /* espacio entre botón y texto */
+    }
+
+    .etiqueta {
+      color: #ffffff;
+      font-size: 16px;
+      font-weight: 500;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+
+    .botonera {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      margin-right: 10%;
+    }
+
+    .botonera2 {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      margin-right: 10%;
+    }
+
+    .boton {
+     
+    }
+      /*COLOR AZUL   */
+    .color1 { 
+      background: linear-gradient(145deg, #1B02E7, #3a3aff); /* azul metálico */
+      box-shadow: inset 0 0 10px rgba(255,255,255,0.2), inset 0 -2px 4px rgba(0,0,0,0.4); 
+      transition: transform 0.2s, background-color 2s;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: none;
+      font-size: 14px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: transform 0.2s, background-color 2s;
+
+    } 
+      /*COLOR ROJO */
+    .color2 { 
+      background: linear-gradient(145deg, #CC0000, #ff4d4d);
+      box-shadow: inset 0 0 10px rgba(255,255,255,0.2), inset 0 -2px 4px rgba(0,0,0,0.4);
+      transition: transform 0.2s, background-color 2s;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: none;
+      font-size: 14px;
+      font-weight: bold;
+      cursor: pointer;
+      
+
+    } 
+      /* COLOR VERDE */
+    .color3 { 
+      background: linear-gradient(145deg, #00E70A, #66ff66);
+      box-shadow: inset 0 0 10px rgba(255,255,255,0.2), inset 0 -2px 4px rgba(0,0,0,0.4);
+      transition: transform 0.2s, background-color 2s;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: none;
+      font-size: 14px;
+      font-weight: bold;
+      cursor: pointer;
+
+    } 
+
+    /* RUEDA 1*/
+    .rueda1 { 
+      background-image: url('../public/images/rueda1.png'); /* ← aquí va la ruta */
+        background-size: cover;       /* ajusta la imagen al botón */
+        background-position: center;  /* centra la imagen */
+       transition: transform 0.2s, background-color 2s;
+       width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: none;
+      font-size: 14px;
+      font-weight: bold;
+      /*box-shadow: 0 4px 10px rgba(0,0,0,0.2);*/
+      cursor: pointer;
+
+    } 
+
+    /* RUEDA 2*/
+    .rueda2 { 
+        background-image: url('../public/images/rueda2.png'); /* ← aquí va la ruta */
+        background-size: cover;       /* ajusta la imagen al botón */
+        background-position: center;  /* centra la imagen */
+       transition: transform 0.2s, background-color 2s;
+       width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: none;
+      font-size: 14px;
+      font-weight: bold;
+      /*box-shadow: 0 4px 10px rgba(0,0,0,0.2);*/
+      cursor: pointer;
+
+    } 
+
+
+  .color1:hover,
+  .color2:hover,
+  .color3:hover {
+    outline: 2px solid #ffffff;
+    outline-offset: 4px;
+  }
+
+    .border{
+      
+      width: 86px;
+      height: 86px;
+      border-radius: 50%;
+      background-color: #ffffff00;
+      z-index: 0;
+    }
+    .border:hover{
+      background-color: white;
+
+    }
+    .boton:hover {
+      background-color: #1a2a40;
+      transform: scale(1.05);
+    }

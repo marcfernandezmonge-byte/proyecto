@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Fuente moderna Montserrat -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,600,800&display=swap">
+    <link rel="stylesheet" href="/src/estilos_reserva.css">
+</head>
+<body>
+
+    <!-- ==== Barra superior de opciones ==== -->
+    <nav class="barra-opciones">
+        <a href="#reserva" class="nav-btn">Reservar</a>
+        <a href="#comprar" class="nav-btn">Comprar</a>
+    </nav>
+
+    <!-- ==== Bloque de Reserva ==== -->
+    <section id="reserva" class="bloque-reserva">
+        <div class="col-info">
+            <h2>Reservalo con nosotros</h2>
+            <p>Fácil, rápido y con total garantía.<br>
+                Da el primer paso y nuestro equipo se pondrá en contacto contigo.</p>
+            <div class="detalle">
+                <ul>
+                    <li><strong>Modelo:</strong> Ford Transit SuperVan 4</li>
+                    <li><strong>Precio:</strong> 120.000 €</li>
+                    <li><strong>Batería:</strong> 50 kWh</li>
+                    <li><strong>Motorización:</strong> 2.000 CV</li>
+                </ul>
+            </div>
+            <!-- Formulario de reserva -->
+            <form>
+                <input type="text" placeholder="Nombre y Apellidos" required>
+                <input type="email" placeholder="Email" required>
+                <input type="tel" placeholder="Teléfono" required>
+                <select>
+                    <option>Entrega de vehículo</option>
+                    <option>En concesionario</option>
+                    <option>En domicilio</option>
+                </select>
+                <label for="direccion-reserva">Si eliges domicilio:</label>
+                <textarea id="direccion-reserva" placeholder="Dirección completa"></textarea>
+                <button type="submit" class="boton-final">RESERVAR AHORA</button>
+            </form>
+            <small>Tus datos están protegidos. Solo contactaremos para completar tu pedido.</small>
+        </div>
+        <div class="col-imgs">
+            <!-- Imágenes del modelo (puedes cambiar rutas y nombres según tus archivos) -->
+            <img src="/public/images/vista_trasera.png" alt="Vista trasera">
+            <img src="/public/images/vista_lateral.png" alt="vista lateral">
+            <img src="/public/images/vista_frontal.png" alt="Vista frontal">
+        </div>
+    </section>
+
+    <!-- ==== Bloque de Compra ==== -->
+    <section id="comprar" class="bloque-comprar">
+        <div class="col-info">
+            <h2>Cómpralo ahora mismo</h2>
+            <p>Rellena tus datos para comprar y recibe atención personalizada.</p>
+            <div class="detalle">
+                <ul>
+                    <li><strong>Modelo:</strong> Ford Transit SuperVan 4</li>
+                    <li><strong>Precio:</strong> 120.000 €</li>
+                    <li><strong>Batería:</strong> 50 kWh</li>
+                    <li><strong>Motorización:</strong> 2.000 CV</li>
+                </ul>
+            </div>
+            <!-- Formulario de compra con campos extra -->
+            <form>
+                <input type="text" placeholder="Nombre y Apellidos" required>
+                <input type="email" placeholder="Email" required>
+                <input type="tel" placeholder="Teléfono" required>
+                <input type="text" placeholder="DNI/NIF" required>
+                <select>
+                    <option>Método de pago</option>
+                    <option>Financiamiento</option>
+                    <option>Tarjeta de crédito</option>
+                </select>
+                <select>
+                    <option>Entrega de vehículo</option>
+                    <option>En concesionario</option>
+                    <option>En domicilio</option>
+                </select>
+                <label for="direccion-compra">Si eliges domicilio:</label>
+                <textarea id="direccion-compra" placeholder="Dirección completa"></textarea>
+                <label><input type="checkbox" required> Acepto los términos y condiciones</label>
+                <button type="submit" class="boton-final">COMPRAR AHORA</button>
+            </form>
+            <small>Tus datos están protegidos. Solo contactaremos para finalizar la compra.</small>
+        </div>
+        <div class="col-imgs">
+            <!-- Repite imágenes o usa otras si quieres diferenciar esta sección -->
+            <img src="/public/images/vista_lateral.png" alt="Vista trasera">
+            <img src="/public/images/interior.png" alt="Interior">
+            <!--<img src="/Proyecto_VFinal/public/images/"> -->
+        </div>
+    </section>
+</body>
+</html>
