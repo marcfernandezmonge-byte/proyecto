@@ -110,3 +110,71 @@ nav a:hover {
   }
 }
 
+.caracteristicas {
+  display: flex;
+  align-items: center;
+  background: #283346;
+  color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.10);
+  padding: 20px 32px;
+  margin-top: 32px;
+  gap: 40px;
+}
+
+.caracteristicas h2 {
+  margin: 0 40px 0 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.caracteristicas ul {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.caracteristicas li {
+  font-size: 1rem;
+  font-weight: 500;
+  background: rgba(255,255,255,0.06);
+  border-radius: 7px;
+  padding: 8px 14px;
+  transition: background 0.2s;
+}
+.caracteristicas li:hover {
+  background: #1a2537;
+}
+
+.caracteristicas-rows {
+  display: flex;
+  gap: 36px; /* Espacio entre las dos filas */
+  justify-content: flex-start;
+}
+
+.caracteristicas-rows ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px; /* Espacio entre ítems verticalmente */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.caracteristicas-rows li {
+  font-size: 1rem;
+  font-weight: 500;
+  background: rgba(255,255,255,0.06);
+  border-radius: 7px;
+  padding: 8px 14px;
+  transition: background 0.2s;
+  min-width: 180px;
+}
+.caracteristicas-rows li:hover {
+  background: #1a2537;
+}
+
