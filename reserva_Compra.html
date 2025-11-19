@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,7 +21,7 @@
             </ul>
         </div>
 
-        <form>
+        <form id="formulario">
             <label>
                 <input type="radio" name="accion" value="reservar" checked> Reservar
             </label>
@@ -33,14 +32,28 @@
 
             <input type="text" placeholder="Nombre y Apellidos" required>
             <input type="email" placeholder="Email" required>
-            <input type="tel" placeholder="Teléfono" required>
+            <input type="telf" placeholder="Teléfono" required>
             <select>
                 <option>Entrega de vehículo</option>
                 <option>En concesionario</option>
                 <option>En domicilio</option>
             </select>
-            <label for="direccion">Si elegiste dirección:</label>
-            <textarea placeholder="Dirección completa"></textarea>
+
+            <label for="direccion">Si elegiste domicilio:</label>
+            <textarea id="direccion" placeholder="Dirección completa"></textarea>
+
+            <div id="comprarExtras" style="display:none;">
+                <input type="text" placeholder="DNI/NIF" id="dniInput">
+                <select>
+                    <option>Metodo de pago</option>
+                    <option>financiamiento</option>
+                    <option>Tarjeta de credito</option>
+                </select>
+                <label>
+                    <input type="checkbox" required>
+                    Acepto los términos y condiciones
+                </label>
+            </div>
             <button type="submit">RESERVAR AHORA</button>
         </form>
         <small>Tus datos están protegidos. Solo contactaremos para completar tu pedido.</small>
