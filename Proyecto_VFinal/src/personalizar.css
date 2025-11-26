@@ -1,11 +1,12 @@
 body {
-      background: #15171b; /* negro fondo */
+      background: #181a1c;
       font-family: 'Segoe UI', sans-serif;
       display: flex;
       justify-content: flex-end;
       align-items: center;
       height: 100vh;
   }
+
 .content-container {
   display: flex;
   flex-direction: row;
@@ -21,9 +22,13 @@ body {
 #threeD-container {
   width: 65%;
   height: 75%;
-  background-color: #1a2a40; /* color sólido como placeholder */
-  border-radius: 12px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  background-color: #181a1c;
+  box-shadow: #181a1c;;
+}
+
+#threeD-container canvas {
+  border-radius: 4%;
+  background-color: #181a1c;
 }
 
 /* Panel lateral de botones */
@@ -42,15 +47,16 @@ body {
 }
 
 .volver-container {
-  background: linear-gradient(to bottom, #15171b, #1a2a40);
-  display: inline-block;
-  color: white;
-  border: none;
+  
   padding: 10px 20px;
-  font-size: 16px;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background .2s;
+  background: #23252a;
+  color: #f5f7fa;
+  font-size: 0.98em;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 999px;
+  border: 1px solid #353942;
+  transition: background .18s, color .18s, border-color .18s;
 }
 
 .volver-container:hover {
@@ -59,34 +65,32 @@ body {
   
 }
 
-/* Footer con botón abajo */
-.footer-navegacion {
-  position: absolute;
-  bottom: 20px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
+    /*.siguiente {
+      
+    display: inline-block;
+      padding: 10px 20px;
+      background: #23252a;
+      color: #f5f7fa;
+      font-size: 0.98em;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 999px;
+      border: 1px solid #353942;
+      transition: background .18s, color .18s, border-color .18s;
+      margin-right: -800px;
+    }*/
+  .etiqueta {
+      color: #ffffff;
+      font-size: 16px;
+      font-weight: 500;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .boton-detalles:hover {
+      background: #1a2a40;
+      color: #ffffff;
+    }
 
 
-.siguiente {
-  background: linear-gradient(to bottom, #15171b, #1a2a40);
-  display: inline-block;
-  color: rgb(255, 255, 255);
-  border: none;
-  padding: 12px 24px;
-  font-size: 16px;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background .2s;
-  text-decoration: none; /* ← esto quita la raya */
-}
-
-
-.siguiente:hover {
-   background: #1a2a40;
-  filter: brightness(110%);
-}
 
 
     .opcion {
@@ -95,12 +99,7 @@ body {
       gap: 12px; /* espacio entre botón y texto */
     }
 
-    .etiqueta {
-      color: #ffffff;
-      font-size: 16px;
-      font-weight: 500;
-      font-family: 'Segoe UI', sans-serif;
-    }
+    
 
 
     .botonera {
@@ -108,18 +107,30 @@ body {
       flex-direction: column;
       gap: 50px;
       margin-right: 5%;
+      max-width: 1100px;
+       
+      margin: 24px auto 0 auto;
+      gap: 24px;
+      background: #31323680;
+      border-radius: 18px;
+      box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15);
+      padding: 230px 30px;
     }
 
-    .botonera2 {
+    .botonera-ruedas {
       display: flex;
       flex-direction: column;
       gap: 50px;
-      margin-right: 5%;
+      margin-right: 30px;
+      max-width: 900px;
+      margin: 24px auto 0 auto;
+
+      background: #31323680;
+      border-radius: 18px;
+      box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15);
+      padding: 250px 30px;
     }
 
-    .boton {
-     
-    }
 
       /*COLOR AZUL   */
     .color1 { 
@@ -211,6 +222,20 @@ body {
     outline-offset: 4px;
   }
 
+
+  .footer-financiero{
+
+      background: #31323680;
+      border-radius: 18px;
+      box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15);
+      padding: 50px 500px;
+      margin-bottom: 2px;
+
+      border-top: 1px solid #353942;
+      color: #f5f7fa;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
     .border{
       
       width: 86px;
@@ -227,3 +252,59 @@ body {
       background-color: #15171b;
       transform: scale(1.05);
     }
+    .footer-financiero {
+  background: #31323680;
+  border-radius: 18px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15);
+  padding: 30px 5%;
+  border-top: 1px solid #353942;
+  color: #f5f7fa;
+  font-family: 'Segoe UI', sans-serif;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-contenido {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.info-financiera {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-left: 15%;
+}
+
+.dato {
+  display: flex;
+  flex-direction: column;
+}
+
+.valor {
+  font-size: 1.4em;
+  font-weight: 600;
+  color: #ffffff;
+  
+}
+
+.siguiente {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #23252a;
+  color: #f5f7fa;
+  font-size: 0.98em;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 999px;
+  border: 1px solid #353942;
+  transition: background .18s, color .18s, border-color .18s;
+}
+
+.siguiente:hover {
+  background: #1a2a40;
+  color: #ffffff;
+}
