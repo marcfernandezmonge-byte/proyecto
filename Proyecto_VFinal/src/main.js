@@ -1,12 +1,20 @@
 // Importamos Three.js y GLTFLoader desde CDN
 import * as THREE from "three";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
+
 // Seleccionamos el contenedor
 const container = document.getElementById("threeD-container");
 
 // Creamos la escena
 const scene = new THREE.Scene();
 scene.background = new THREE.Color(0xeeeeee);
+/*const rutaCocheAzulA ="";
+const rutaCocheRojoA ="";
+const rutaCocheVerdeA ="";
+const rutaCocheAzulB ="";
+const rutaCocheRojoB ="";
+const rutaCocheVerdeB ="";
+*/
 
 // Cámara
 const camera = new THREE.PerspectiveCamera(
@@ -28,16 +36,60 @@ scene.add(light);
 
 // Loader GLTF
 const loader = new GLTFLoader();
-loader.load(
-  "/models/coche.glb", // <-- ruta correcta en Vite
-  function (gltf) {
-    scene.add(gltf.scene);
-  },
-  undefined,
-  function (error) {
-    console.error("Error cargando modelo:", error);
+
+// Variables de estado
+let colorSeleccionado = "azul"; // azul, rojo, verde
+let ruedaSeleccionada = "A";    // A = urbana, B = todoterreno
+let modeloActual ="/models/rutaCocheAzulA";
+
+// Función para cargar el modelo correcto
+function cargarModelo(color, rueda) {
+  const ruta = `/models/coche_${color}_${rueda}.glb`;
+
+  // Eliminar modelo anterior si existe
+  if (modeloActual) {
+    scene.remove(modeloActual);
   }
-);
+
+  loader.load(
+    ruta,
+    function (gltf) {
+      modeloActual = gltf.scene;
+      scene.add(modeloActual);
+    },
+    undefined,
+    function (error) {
+      console.error("Error cargando modelo:", error);
+    }
+  );
+}
+
+// Carga inicial
+cargarModelo(colorSeleccionado, ruedaSeleccionada);
+
+// Eventos de botones de color
+document.querySelector(".color1").addEventListener("click", () => {
+  colorSeleccionado = "azul";
+  cargarModelo(colorSeleccionado, ruedaSeleccionada);
+});
+document.querySelector(".color2").addEventListener("click", () => {
+  colorSeleccionado = "rojo";
+  cargarModelo(colorSeleccionado, ruedaSeleccionada);
+});
+document.querySelector(".color3").addEventListener("click", () => {
+  colorSeleccionado = "verde";
+  cargarModelo(colorSeleccionado, ruedaSeleccionada);
+});
+
+// Eventos de botones de rueda
+document.querySelector(".rueda1").addEventListener("click", () => {
+  ruedaSeleccionada = "A";
+  cargarModelo(colorSeleccionado, ruedaSeleccionada);
+});
+document.querySelector(".rueda2").addEventListener("click", () => {
+  ruedaSeleccionada = "B";
+  cargarModelo(colorSeleccionado, ruedaSeleccionada);
+});
 
 // Animación
 function animate() {
