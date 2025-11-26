@@ -1,6 +1,7 @@
 // Importamos Three.js y GLTFLoader desde CDN
 import * as THREE from "three";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
+import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 
 // Seleccionamos el contenedor
 const container = document.getElementById("threeD-container");
@@ -30,6 +31,16 @@ const renderer = new THREE.WebGLRenderer({ antialias: true });
 renderer.setSize(container.clientWidth, container.clientHeight);
 container.appendChild(renderer.domElement);
 
+const controls = new OrbitControls(camera, renderer.domElement);
+controls.enableDamping = true;
+controls.dampingFactor = 0.05;
+
+controls.minPolarAngle = Math.PI / 4;   // 45° arriba
+controls.maxPolarAngle = Math.PI / 2;   // 90° horizontal
+
+// Opcional: limita zoom
+controls.minDistance = 10;
+controls.maxDistance = 40;
 // Luz
 const light = new THREE.HemisphereLight(0xffffff, 0x444444, 1);
 scene.add(light);
@@ -94,6 +105,7 @@ document.querySelector(".rueda2").addEventListener("click", () => {
 // Animación
 function animate() {
   requestAnimationFrame(animate);
+  controls.update(); // ← necesario para damping
   renderer.render(scene, camera);
 }
 animate();
