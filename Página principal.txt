@@ -1,0 +1,15 @@
+Página principal: 
+
+	"Modificar" en general la página principal. 
+	Archivo de fondo furgoneta --> Main Page. 
+	Div de la imagen de la supervan --> alargarlo en la X y ponerle un color traslucido. 
+	Barra de navegación para todas las webs (quitar los botones actuales) opciones centradas. 
+		Iluminar la opción actual dejando las otras con un color más grisaceo / oscuro "deseleccionado". 
+
+Pantalla personalizar: 
+
+	Actualizar precios en base a colores, ruedas...
+	poner bien el fotter
+	poner bien los botones y hacerlos mas grandes
+
+	

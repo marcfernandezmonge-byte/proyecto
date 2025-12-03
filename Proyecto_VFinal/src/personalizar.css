@@ -1,11 +1,13 @@
 body {
-      background: #181a1c;
+      background: #000000;
+      background: linear-gradient(186deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 1) 100%);
       font-family: 'Segoe UI', sans-serif;
       display: flex;
       justify-content: flex-end;
       align-items: center;
       height: 100vh;
   }
+  
 
 .content-container {
   display: flex;
@@ -14,16 +16,17 @@ body {
   align-items: center;
   width: 100%;
   height: 100vh;
-  padding: 0 5%;
+  padding: 0, 5%;
   box-sizing: border-box;
 }
 
 /* Simulación de imagen del coche */
 #threeD-container {
-  width: 65%;
-  height: 75%;
+  width: 80%;
+  height: 80%;
   background-color: #181a1c;
-  box-shadow: #181a1c;;
+  box-shadow: #181a1c;
+
 }
 
 #threeD-container canvas {
@@ -38,7 +41,7 @@ body {
   gap: 60px;
 }
 
-    /* Botón arriba a la izquierda */
+/* Botón arriba a la izquierda */
 .volver-container {
   position: absolute;
   top: 20px;
@@ -47,7 +50,6 @@ body {
 }
 
 .volver-container {
-  
   padding: 10px 20px;
   background: #23252a;
   color: #f5f7fa;
@@ -62,202 +64,187 @@ body {
 .volver-container:hover {
   background: #1a2a40;
   filter: brightness(110%);
-  
 }
 
-    /*.siguiente {
-      
-    display: inline-block;
-      padding: 10px 20px;
-      background: #23252a;
-      color: #f5f7fa;
-      font-size: 0.98em;
-      font-weight: 600;
-      text-decoration: none;
-      border-radius: 999px;
-      border: 1px solid #353942;
-      transition: background .18s, color .18s, border-color .18s;
-      margin-right: -800px;
-    }*/
-  .etiqueta {
-      color: #ffffff;
-      font-size: 16px;
-      font-weight: 500;
-      font-family: 'Segoe UI', sans-serif;
-    }
-    .boton-detalles:hover {
-      background: #1a2a40;
-      color: #ffffff;
-    }
+/*.siguiente {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #23252a;
+  color: #f5f7fa;
+  font-size: 0.98em;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 999px;
+  border: 1px solid #353942;
+  transition: background .18s, color .18s, border-color .18s;
+  margin-right: -800px;
+}*/
 
+.etiqueta {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Segoe UI', sans-serif;
+}
 
+.boton-detalles:hover {
+  background: #1a2a40;
+  color: #ffffff;
+}
 
+.opcion {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* espacio entre botón y texto */
+}
 
-    .opcion {
-      display: flex;
-      align-items: center;
-      gap: 12px; /* espacio entre botón y texto */
-    }
+.botonera {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-left: 16px;
+  width: 300px;
+  height: 260px;
+  border-left: 2px solid #353942;
+  background: #31323680;
+  border-radius: 18px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15);
+  padding: 230px 30px;
+}
 
-    
+.botonera-ruedas {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-right: 30px;
+  margin-left: 32px;
+  width: 300px;
+  height: 22.5%;
+  border-left: 2px solid #353942;
+  /*margin: 24px auto 0 auto;*/
+  background: #31323680;
+  border-radius: 18px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15);
+  padding: 250px 30px;
+}
 
+/*COLOR AZUL */
+.color1 {
+  background: linear-gradient(145deg, #1B02E7, #3a3aff); /* azul metálico */
+  box-shadow: inset 0 0 10px rgba(255,255,255,0.2), inset 0 -2px 4px rgba(0,0,0,0.4);
+  transition: transform 0.2s, background-color 2s;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 2s;
+}
 
-    .botonera {
-      display: flex;
-      flex-direction: column;
-      gap: 50px;
-      margin-right: 5%;
-      max-width: 1100px;
-       
-      margin: 24px auto 0 auto;
-      gap: 24px;
-      background: #31323680;
-      border-radius: 18px;
-      box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15);
-      padding: 230px 30px;
-    }
+/*COLOR ROJO */
+.color2 {
+  background: linear-gradient(145deg, #CC0000, #ff4d4d);
+  box-shadow: inset 0 0 10px rgba(255,255,255,0.2), inset 0 -2px 4px rgba(0,0,0,0.4);
+  transition: transform 0.2s, background-color 2s;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
 
-    .botonera-ruedas {
-      display: flex;
-      flex-direction: column;
-      gap: 50px;
-      margin-right: 30px;
-      max-width: 900px;
-      margin: 24px auto 0 auto;
+/* COLOR VERDE */
+.color3 {
+  background: linear-gradient(145deg, #00E70A, #66ff66);
+  box-shadow: inset 0 0 10px rgba(255,255,255,0.2), inset 0 -2px 4px rgba(0,0,0,0.4);
+  transition: transform 0.2s, background-color 2s;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
 
-      background: #31323680;
-      border-radius: 18px;
-      box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15);
-      padding: 250px 30px;
-    }
+/* RUEDA 1*/
+.rueda1 {
+  background-image: url('../public/images/rueda1.png'); /* ← aquí va la ruta */
+  background-size: cover;       /* ajusta la imagen al botón */
+  background-position: center;  /* centra la imagen */
+  transition: transform 0.2s, background-color 2s;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+  /*box-shadow: 0 4px 10px rgba(0,0,0,0.2);*/
+  cursor: pointer;
+}
 
+/* RUEDA 2*/
+.rueda2 {
+  background-image: url('../public/images/rueda2.png'); /* ← aquí va la ruta */
+  background-size: cover;       /* ajusta la imagen al botón */
+  background-position: center;  /* centra la imagen */
+  transition: transform 0.2s, background-color 2s;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+  /*box-shadow: 0 4px 10px rgba(0,0,0,0.2);*/
+  cursor: pointer;
+  margin-top: 32px;
+}
 
-      /*COLOR AZUL   */
-    .color1 { 
-      background: linear-gradient(145deg, #1B02E7, #3a3aff); /* azul metálico */
-      box-shadow: inset 0 0 10px rgba(255,255,255,0.2), inset 0 -2px 4px rgba(0,0,0,0.4); 
-      transition: transform 0.2s, background-color 2s;
-      width: 80px;
-      height: 80px;
-      border-radius: 50%;
-      border: none;
-      font-size: 14px;
-      font-weight: bold;
-      cursor: pointer;
-      transition: transform 0.2s, background-color 2s;
+.color1:hover,
+.color2:hover,
+.color3:hover {
+  outline: 2px solid #ffffff;
+  outline-offset: 4px;
+}
 
-    } 
-      /*COLOR ROJO */
-    .color2 { 
-      background: linear-gradient(145deg, #CC0000, #ff4d4d);
-      box-shadow: inset 0 0 10px rgba(255,255,255,0.2), inset 0 -2px 4px rgba(0,0,0,0.4);
-      transition: transform 0.2s, background-color 2s;
-      width: 80px;
-      height: 80px;
-      border-radius: 50%;
-      border: none;
-      font-size: 14px;
-      font-weight: bold;
-      cursor: pointer;
-      
+/* .footer-financiero{
+  background: #31323680;
+  border-radius: 18px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15);
+  padding: 50px 500px;
+  margin-bottom: 2px;
+  border-top: 1px solid #353942;
+  color: #f5f7fa;
+  font-family: 'Segoe UI', sans-serif;
+}*/
 
-    } 
-      /* COLOR VERDE */
-    .color3 { 
-      background: linear-gradient(145deg, #00E70A, #66ff66);
-      box-shadow: inset 0 0 10px rgba(255,255,255,0.2), inset 0 -2px 4px rgba(0,0,0,0.4);
-      transition: transform 0.2s, background-color 2s;
-      width: 80px;
-      height: 80px;
-      border-radius: 50%;
-      border: none;
-      font-size: 14px;
-      font-weight: bold;
-      cursor: pointer;
+.border{
+  width: 86px;
+  height: 86px;
+  border-radius: 50%;
+  background-color: #ffffff00;
+  z-index: 0;
+}
 
-    } 
+.border:hover{
+  background-color: white;
+}
 
-    /* RUEDA 1*/
-    .rueda1 { 
-      background-image: url('../public/images/rueda1.png'); /* ← aquí va la ruta */
-        background-size: cover;       /* ajusta la imagen al botón */
-        background-position: center;  /* centra la imagen */
-       transition: transform 0.2s, background-color 2s;
-       width: 80px;
-      height: 80px;
-      border-radius: 50%;
-      border: none;
-      font-size: 14px;
-      font-weight: bold;
-      /*box-shadow: 0 4px 10px rgba(0,0,0,0.2);*/
-      cursor: pointer;
-      
+.boton:hover {
+  background-color: #15171b;
+  transform: scale(1.05);
+}
 
-    } 
-
-    /* RUEDA 2*/
-    .rueda2 { 
-        background-image: url('../public/images/rueda2.png'); /* ← aquí va la ruta */
-        background-size: cover;       /* ajusta la imagen al botón */
-        background-position: center;  /* centra la imagen */
-       transition: transform 0.2s, background-color 2s;
-       width: 80px;
-      height: 80px;
-      border-radius: 50%;
-      border: none;
-      font-size: 14px;
-      font-weight: bold;
-      /*box-shadow: 0 4px 10px rgba(0,0,0,0.2);*/
-      cursor: pointer;
-      margin-top: 32px;
-     
-
-    } 
-
-
-  .color1:hover,
-  .color2:hover,
-  .color3:hover {
-    outline: 2px solid #ffffff;
-    outline-offset: 4px;
-  }
-
-
-  .footer-financiero{
-
-      background: #31323680;
-      border-radius: 18px;
-      box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15);
-      padding: 50px 500px;
-      margin-bottom: 2px;
-
-      border-top: 1px solid #353942;
-      color: #f5f7fa;
-      font-family: 'Segoe UI', sans-serif;
-    }
-
-    .border{
-      
-      width: 86px;
-      height: 86px;
-      border-radius: 50%;
-      background-color: #ffffff00;
-      z-index: 0;
-    }
-    .border:hover{
-      background-color: white;
-
-    }
-    .boton:hover {
-      background-color: #15171b;
-      transform: scale(1.05);
-    }
-    .footer-financiero {
+.footer-financiero {
   background: #31323680;
   border-radius: 18px;
   box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15);
   padding: 30px 5%;
-  border-top: 1px solid #353942;
+  border-top: 2px solid #353942;
   color: #f5f7fa;
   font-family: 'Segoe UI', sans-serif;
   position: absolute;
@@ -288,7 +275,6 @@ body {
   font-size: 1.4em;
   font-weight: 600;
   color: #ffffff;
-  
 }
 
 .siguiente {
@@ -302,9 +288,8 @@ body {
   border-radius: 999px;
   border: 1px solid #353942;
   transition: background .18s, color .18s, border-color .18s;
-}
-
-.siguiente:hover {
-  background: #1a2a40;
-  color: #ffffff;
+ } 
+ .siguiente:hover { 
+  background: #1a2a40; 
+  color: #ffffff; 
 }
