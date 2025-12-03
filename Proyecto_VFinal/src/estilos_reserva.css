@@ -21,7 +21,7 @@ html {
   gap: 12px;
   align-items: center;
   padding: 16px 40px;
-  background: #181a1c;
+  background: #37393b;
   /* mismo fondo que la página */
 }
 
@@ -29,13 +29,13 @@ html {
 .top-btn {
   display: inline-block;
   padding: 10px 20px;
-  background: #23252a;
+  background: #101011;
   color: #f5f7fa;
   font-size: 0.98em;
   font-weight: 600;
   text-decoration: none;
   border-radius: 999px;
-  border: 1px solid #353942;
+  border: 1px solid #a1a1a1;
   transition: background .18s, color .18s, border-color .18s, transform .12s;
 }
 

@@ -1,60 +1,52 @@
 <!DOCTYPE html>
-<html lang="es">
+  <html lang="es">
+    <head>
+      <meta charset="UTF-8">
+      <title>Ford SuperVan</title>
+      <link rel="stylesheet" href="personalizar.css">
+      <script src="main.js" type="module"></script>
+    </head>
+   <body>
+  <!-- Botón volver arriba a la izquierda -->
+        <a class="volver-container" href="/Proyecto_VFinal/index.html">← Atrás</a>
+  
 
-<head>
-  <meta charset="UTF-8">
-  <title>Ford SuperVan</title>
-  <link rel="stylesheet" href="personalizar.css">
-  <script src="main.js" type="module"></script>
-</head>
+        <div class="content-container">
+          <!-- Imagen del coche -->
+          <div id="threeD-container"></div>
 
-<body>
+          <!-- Botonera de ruedas (columna intermedia) -->
+          <div class="botonera-ruedas">
+            <div class="opcion">
+              <button class="rueda1"></button>
+              <span class="etiqueta">Rueda Urbana</span>
+            </div>
+            <div class="opcion">
+              <button class="rueda2"></button>
+              <span class="etiqueta">Rueda Todoterreno</span>
+            </div>
+          </div>
 
-  <header class="top-bar">
-
-    <!-- Botón Atrás: vuelve a la página anterior del navegador -->
-    <a href="#" onclick="history.back();" class="top-btn">← Atrás</a>
-
-    <!-- Botón Volver a inicio: lleva a la página principal -->
-    <a href="/Proyecto_VFinal/index.html" class="top-btn">Volver a inicio</a>
-  </header>
-
-  <div class="content-container">
-    <!-- Imagen del coche -->
-    <div id="threeD-container"></div>
-
-    <!-- Botonera de ruedas (columna intermedia) -->
-    <div class="botonera-ruedas">
-      <div class="opcion">
-        <button class="rueda1"></button>
-        <span class="etiqueta">Rueda Urbana</span>
-      </div>
-      <div class="opcion">
-        <button class="rueda2"></button>
-        <span class="etiqueta">Rueda Todoterreno</span>
-      </div>
-    </div>
-
-    <!-- Panel de colores -->
-    <div class="botonera">
-      <div class="opcion">
-        <button class="color1"></button>
-        <span class="etiqueta">Azul Metálico</span>
-      </div>
-      <div class="opcion">
-        <button class="color2"></button>
-        <span class="etiqueta">Rojo Metálico</span>
-      </div>
-      <div class="opcion">
-        <button class="color3"></button>
-        <span class="etiqueta">Verde Metálico</span>
-      </div>
-    </div>
-  </div>
+          <!-- Panel de colores -->
+          <div class="botonera">
+            <div class="opcion">
+              <button class="color1"></button>
+              <span class="etiqueta">Azul Metálico</span>
+            </div>
+            <div class="opcion">
+              <button class="color2"></button>
+              <span class="etiqueta">Rojo Metálico</span>
+            </div>
+            <div class="opcion">
+              <button class="color3"></button>
+              <span class="etiqueta">Verde Metálico</span>
+            </div>
+          </div>
+        </div>
 
 
 
-  <!-- Footer financiero -->
+    <!-- Footer financiero -->
   <footer class="footer-financiero">
     <div class="footer-contenido">
       <div class="info-financiera">
@@ -70,6 +62,7 @@
       <a class="siguiente" href="/src/reserva_Compra.html">Siguiente →</a>
     </div>
   </footer>
-</body>
+   
 
+  </body>
 </html>
