@@ -3,14 +3,13 @@ body,
 html {
   margin: 0;
   /* Elimina márgenes por defecto */
-  padding: 0;
+  padding: 0; 
   background: #181a1c;
   /* Fondo oscuro elegante */
   font-family: 'Montserrat', Arial, sans-serif;
   color: #EEE;
   /* Texto claro sobre fondo oscuro */
 }
-
 /* 2. Barra de navegación superior */
 .barra-opciones {
   display: flex;
@@ -22,7 +21,6 @@ html {
   /* Espacio entre botones */
   box-shadow: 0 2px 7px rgba(0, 0, 0, 0.11);
 }
-
 /* Contenedor para centrar o alinear el botón de volver */
 .volver-inicio-contenedor {
   max-width: 1100px;
@@ -30,7 +28,6 @@ html {
   text-align: left;
   /* o center si lo quieres centrado */
 }
-
 /* Botón/enlace para volver a inicio */
 .boton-volver {
   display: inline-block;
@@ -44,15 +41,12 @@ html {
   border: 1px solid #353942;
   transition: background .18s, color .18s, border-color .18s;
 }
-
 .boton-volver:hover,
 .boton-volver:focus {
   background: #15171b;
   color: #ffffff;
   border-color: #f0eeee;
 }
-
-
 .nav-btn {
   background: #ffffff;
   color: #000000;
@@ -64,13 +58,11 @@ html {
   border-bottom: 3px solid #676e6d;
   transition: background 0.2s;
 }
-
 .nav-btn.active,
 .nav-btn:hover {
   /* Destaca el botón activo */
   background: #a2a4ac;
 }
-
 /* 3. Bloques principales: layout de dos columnas */
 .bloque-reserva,
 .bloque-comprar {
@@ -85,12 +77,10 @@ html {
   box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15);
   padding: 32px 40px;
 }
-
 /* Ocultar bloque (para alternar con JavaScript) */
 .oculto {
   display: none !important;
 }
-
 /* 4. Columnas internas */
 .col-info {
   flex: 1.1;
@@ -98,7 +88,6 @@ html {
   flex-direction: column;
   gap: 16px;
 }
-
 .col-imgs {
   flex: 1;
   display: flex;
@@ -106,7 +95,6 @@ html {
   gap: 16px;
   align-items: flex-end;
 }
-
 /* 5. Imagen destacada y galería */
 .col-imgs img {
   width: 340px;
@@ -114,7 +102,6 @@ html {
   box-shadow: 0 4px 18px rgba(32, 32, 32, 0.10);
   margin-bottom: 9px;
 }
-
 /* 6. Detalles y título */
 h2 {
   color: #fbfbfa;
@@ -186,11 +173,9 @@ button {
   transition: background .2s;
   letter-spacing: 1px;
 }
-
 button:hover {
   background: #ca2429;
 }
-
 /* Botón moderno gris oscuro con borde suave */
 .boton-final {
   width: 100%;
@@ -221,9 +206,6 @@ button:hover {
   border-color: #373a42;
   /* más oscuro al pasar el mouse */
 }
-
-
-
 /* diseño del pie de pagina */
 .mi-footer {
   width: 100%;
