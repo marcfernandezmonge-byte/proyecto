@@ -39,6 +39,7 @@ html {
   transition: background .18s, color .18s, border-color .18s, transform .12s;
 }
 
+/* al pasar el cursor */
 .top-btn:hover,
 .top-btn:focus {
   background: #15171b;
