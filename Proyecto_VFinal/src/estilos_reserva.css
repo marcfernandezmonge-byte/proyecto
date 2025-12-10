@@ -1,15 +1,13 @@
-/* 1. Reset general */
-body,
-html {
+/* 1. Reset general:Fondo degradado en vez de color plano */
+body {
+  background: #000000;
+  background: linear-gradient(186deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 1) 100%);
   margin: 0;
-  /* Elimina márgenes por defecto */
   padding: 0;
-  background: #181a1c;
-  /* Fondo oscuro elegante */
   font-family: 'Montserrat', Arial, sans-serif;
   color: #EEE;
-  /* Texto claro sobre fondo oscuro */
 }
+
 
 /* Barra superior fija con los botones Atrás y Volver a inicio */
 .top-bar {
@@ -121,7 +119,7 @@ html {
   background: #a2a4ac;
 }
 
-/* 3. Bloques principales: layout de dos columnas */
+/* 3. Bloques principales: tarjetas translúcidas tipo glass */
 .bloque-reserva,
 .bloque-comprar {
   display: flex;
@@ -130,11 +128,21 @@ html {
   max-width: 1100px;
   margin: 24px auto 0 auto;
   gap: 24px;
-  background: #222327;
+
+  /* Antes: background sólido #222327 */
+  background: rgba(20, 22, 30, 0.65);
+  /* menos opaco → más transparente */
+  backdrop-filter: blur(16px);
+  /* un poco más de blur */
+  -webkit-backdrop-filter: blur(16px);
   border-radius: 18px;
-  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  /* borde más visible */
+  box-shadow: 0 16px 45px rgba(0, 0, 0, 0.55);
   padding: 32px 40px;
 }
+
+
 
 /* Ocultar bloque (para alternar con JavaScript) */
 .oculto {
@@ -149,21 +157,46 @@ html {
   gap: 16px;
 }
 
+/* Columna de imágenes en modo collage */
 .col-imgs {
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  align-items: flex-end;
+  gap: 14px;
+  align-items: stretch;   /* ocupan todo el ancho disponible */
+  overflow: hidden;     /* que no se salga del bloque*/
 }
 
-/* 5. Imagen destacada y galería */
-.col-imgs img {
-  width: 340px;
+/* Foto grande arriba */
+.foto-grande img {
+  width: 100%;
+  max-height: 210px;
   border-radius: 18px;
-  box-shadow: 0 4px 18px rgba(32, 32, 32, 0.10);
-  margin-bottom: 9px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.45);
+  object-fit: cover;
 }
+
+/* Dos fotos pequeñas debajo en fila */
+.fotos-peq {
+  display: flex;
+  gap: 12px;
+}
+
+.fotos-peq img {
+  flex: 1;
+  max-height: 150px;
+  border-radius: 14px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.38);
+  object-fit: cover;
+}
+
+/* Ajuste general para todas las imágenes de la columna */
+.col-imgs img {
+  width: 100%;
+}
+
+
+
 
 /* 6. Detalles y título */
 h2 {
