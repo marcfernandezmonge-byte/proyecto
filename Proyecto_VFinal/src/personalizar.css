@@ -9,6 +9,50 @@ body {
       overflow: hidden;
   }
   
+.barra-progreso {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 20px;
+  background-color: #23252a;
+  font-family: 'Segoe UI', sans-serif;
+  border-bottom: 1px solid #353942;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 20;
+}
+
+.paso {
+  padding: 10px 22px;
+  border-radius: 999px;
+  background-color: #353942;
+  color: #aaa;
+  font-weight: 600;
+  font-size: 0.95em;
+  text-decoration: none;
+  transition: background 0.3s, color 0.3s;
+}
+
+.paso:hover {
+  background-color: #1a2a40;
+  color: #fff;
+}
+
+.paso.activo {
+  background-color: #1a2a40;
+  color: #fff;
+  box-shadow: 0 0 8px rgba(255,255,255,0.3);
+}
+
+.flecha {
+  color: #888;
+  font-size: 1.2em;
+}
+
+
 
 .content-container {
   display: flex;
