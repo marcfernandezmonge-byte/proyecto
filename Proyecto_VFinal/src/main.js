@@ -9,13 +9,6 @@ const container = document.getElementById("threeD-container");
 // Creamos la escena
 const scene = new THREE.Scene();
 scene.background = new THREE.Color(0xeeeeee);
-/*const rutaCocheAzulA ="";
-const rutaCocheRojoA ="";
-const rutaCocheVerdeA ="";
-const rutaCocheAzulB ="";
-const rutaCocheRojoB ="";
-const rutaCocheVerdeB ="";
-*/
 
 // Cámara
 const camera = new THREE.PerspectiveCamera(
@@ -41,6 +34,7 @@ controls.maxPolarAngle = Math.PI / 2;   // 90° horizontal
 // Opcional: limita zoom
 controls.minDistance = 10;
 controls.maxDistance = 40;
+
 // Luz
 const light = new THREE.HemisphereLight(0xffffff, 0x444444, 1);
 scene.add(light);
@@ -48,10 +42,26 @@ scene.add(light);
 // Loader GLTF
 const loader = new GLTFLoader();
 
+// =====================
+// PRECIOS
+// =====================
+let precioBase = 120260.00;
+
+const preciosColores = {
+  azul: 0,
+  rojo: 399.99,
+  verde: 599.99,
+};
+
+const preciosRuedas = {
+  A: 0,       // urbana
+  B: 1499.99, // todoterreno
+};
+
 // Variables de estado
-let colorSeleccionado = "azul"; // azul, rojo, verde
-let ruedaSeleccionada = "A";    // A = urbana, B = todoterreno
-let modeloActual ="/models/rutaCocheAzulA";
+let colorSeleccionado = "azul"; 
+let ruedaSeleccionada = "A";    
+let modeloActual = null;
 
 // Función para cargar el modelo correcto
 function cargarModelo(color, rueda) {
@@ -75,31 +85,53 @@ function cargarModelo(color, rueda) {
   );
 }
 
+// =====================
+// ACTUALIZAR PRECIO Y CONTRIBUCIÓN
+// =====================
+function actualizarPrecio() {
+  const total = precioBase + preciosColores[colorSeleccionado] + preciosRuedas[ruedaSeleccionada];
+  
+  // Actualizar presupuesto estimado
+  const valorFooter = document.querySelector(".footer-financiero .dato .valor");
+  valorFooter.textContent = total.toLocaleString("es-ES", { style: "currency", currency: "EUR" });
+
+  // Calcular contribución anual (1% del total)
+  const contribucion = total * 0.01;
+  const contribucionFooter = document.querySelectorAll(".footer-financiero .dato .valor")[1];
+  contribucionFooter.textContent = contribucion.toLocaleString("es-ES", { style: "currency", currency: "EUR" }) + "/año";
+}
+
 // Carga inicial
 cargarModelo(colorSeleccionado, ruedaSeleccionada);
+actualizarPrecio();
 
 // Eventos de botones de color
 document.querySelector(".color1").addEventListener("click", () => {
   colorSeleccionado = "azul";
   cargarModelo(colorSeleccionado, ruedaSeleccionada);
+  actualizarPrecio();
 });
 document.querySelector(".color2").addEventListener("click", () => {
   colorSeleccionado = "rojo";
   cargarModelo(colorSeleccionado, ruedaSeleccionada);
+  actualizarPrecio();
 });
 document.querySelector(".color3").addEventListener("click", () => {
   colorSeleccionado = "verde";
   cargarModelo(colorSeleccionado, ruedaSeleccionada);
+  actualizarPrecio();
 });
 
 // Eventos de botones de rueda
 document.querySelector(".rueda1").addEventListener("click", () => {
   ruedaSeleccionada = "A";
   cargarModelo(colorSeleccionado, ruedaSeleccionada);
+  actualizarPrecio();
 });
 document.querySelector(".rueda2").addEventListener("click", () => {
   ruedaSeleccionada = "B";
   cargarModelo(colorSeleccionado, ruedaSeleccionada);
+  actualizarPrecio();
 });
 
 // Animación

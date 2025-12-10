@@ -3,53 +3,64 @@
     <head>
       <meta charset="UTF-8">
       <title>Ford SuperVan</title>
-      <link rel="stylesheet" href="./personalizar.css">
-      <script src="./scripts/car_visualizer.js" type="module"></script>
+      <link rel="stylesheet" href="personalizar.css">
+      <script src="main.js" type="module"></script>
     </head>
    <body>
   <!-- Botón volver arriba a la izquierda -->
-  <div class="volver-container">← Atrás</div>
+        <a class="volver-container" href="/Proyecto_VFinal/index.html">← Atrás</a>
 
-  <!-- Contenedor principal: imagen + personalización -->
-  <div class="content-container">
-    <!-- Imagen del coche (color sólido de fondo) -->
-    <div id="threeD-container"></div>
-   
-    
 
-    <!-- Botones de personalización -->
-    <div class="panel-personalizacion">
-      <div class="botonera">
-        <div class="opcion">
-          <button class="color1"></button>
-          <span class="etiqueta">Azul Metálico</span>
+        <div class="content-container">
+          <!-- Imagen del coche -->
+          <div id="threeD-container"></div>
+
+          <!-- Botonera de ruedas (columna intermedia) -->
+          <div class="botonera-ruedas">
+            <div class="opcion">
+              <button class="rueda1"></button>
+              <span class="etiqueta">Rueda Urbana</span>
+            </div>
+            <div class="opcion">
+              <button class="rueda2"></button>
+              <span class="etiqueta">Rueda Todoterreno<br>1499,99€</span>
+            </div>
+          </div>
+
+          <!-- Panel de colores -->
+          <div class="botonera">
+            <div class="opcion">
+              <button class="color1"></button>
+              <span class="etiqueta">Azul Metálico</span>
+            </div>
+            <div class="opcion">
+              <button class="color2"></button>
+              <span class="etiqueta">Rojo Metálico<br>399,99€</span>
+            </div>
+            <div class="opcion">
+              <button class="color3"></button>
+              <span class="etiqueta">Verde Metálico<br>599,99€</span>
+            </div>
+          </div>
         </div>
-        <div class="opcion">
-          <button class="color2"></button>
-          <span class="etiqueta">Rojo Metálico</span>
+
+
+
+    <!-- Footer financiero -->
+  <footer class="footer-financiero">
+    <div class="footer-contenido">
+      <div class="info-financiera">
+        <div class="dato">
+          <span class="etiqueta">Presupuesto estimado</span>
+          <span class="valor">120.260,00 €</span>
         </div>
-        <div class="opcion">
-          <button class="color3"></button>
-          <span class="etiqueta">Verde Metálico</span>
+        <div class="dato">
+          <span class="etiqueta">Contribución anual</span>
+          <span class="valor">1.250,00 €/año</span>
         </div>
       </div>
-
-      <div class="botonera2">
-        <div class="opcion">
-          <button class="rueda1"></button>
-          <span class="etiqueta">Rueda Urbana</span>
-        </div>
-        <div class="opcion">
-          <button class="rueda2"></button>
-          <span class="etiqueta">Rueda Todoterreno</span>
-        </div>
-      </div>
+      <a class="siguiente" href="/src/reserva_Compra.html">Siguiente →</a>
     </div>
-  </div>
-
-  <!-- Botón siguiente en el footer -->
-  <footer class="footer-navegacion">
-    <button class="siguiente">Siguiente →</button>
   </footer>
-</body>
-  </html>
+  </body>
+</html>
