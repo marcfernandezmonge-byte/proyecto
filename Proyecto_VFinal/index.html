@@ -4,15 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CUSTOM CAR SALES - Main Page</title>
-  <link rel="stylesheet" href="estilos_index.css">
+  <!-- CSS vive en src/estilos_index.css -->
+  <link rel="stylesheet" href="src/estilos_index.css">
 </head>
 <body>
   <header>
     <div class="container-header">
       <a href="index.html" class="logo">
-        <img src="logo_ford.png" alt="Ford">
+        <!-- logo está en public/images/logo.(png/jpg) -->
+        <img src="public/images/logo.png" alt="Ford">
       </a>
-      <!-- Menú eliminado: solo logo en la cabecera -->
+      <!-- Menú eliminado -->
     </div>
   </header>
 
@@ -27,12 +29,14 @@
               Siente la emoción de conducir un coche que une innovación, seguridad y un estilo inconfundible.<br><br>
               Compra hoy en Ford y accede a atención personalizada, opciones de financiamiento flexibles y entrega inmediata. ¡Haz que cada viaje sea único!
             </p>
-            <a href="personalizar.html" class="boton-principal">¡Personalízalo ahora!</a>
+            <!-- Avance único -->
+            <a href="src/personalizar.html" class="boton-principal">¡Personalízalo ahora!</a>
           </div>
 
           <div class="hero-col hero-img">
             <div class="hero-img-frame">
-              <img src="supervan_2.jpg" alt="Ford Supervan" class="img-hero-grande">
+              <!-- supervan_2 en public/images/supervan_2.(jpg/png) -->
+              <img src="public/images/supervan_2.jpg" alt="Ford Supervan" class="img-hero-grande">
             </div>
           </div>
         </div>
@@ -41,7 +45,7 @@
 
     <section class="caracteristicas-modernas">
       <div class="car-img-wrapper">
-        <img src="supervan_2.jpg" alt="Ford Supervan" class="car-img">
+        <img src="public/images/supervan_2.jpg" alt="Ford Supervan" class="car-img">
       </div>
       <div class="caracteristicas-info">
         <h2>Características de la Ford Supervan</h2>
@@ -57,5 +61,8 @@
       </div>
     </section>
   </main>
+
+  <!-- tu JS si lo tienes -->
+  <script src="src/main.js"></script>
 </body>
 </html>
