@@ -3,44 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CUSTOM CAR SALES</title>
-  <link rel="stylesheet" href="/src/estilos_index.css">
+  <title>CUSTOM CAR SALES - Main Page</title>
+  <link rel="stylesheet" href="estilos_index.css">
 </head>
 <body>
   <header>
     <div class="container-header">
       <a href="index.html" class="logo">
-        <img src="/images/logo.png" alt="Logo Empresa">
+        <img src="logo_ford.png" alt="Ford">
       </a>
-      <nav>
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="/src/personalizar.html">Personalizar</a></li>
-          <li><a href="/src/reserva_Compra.html">Reservar/Comprar</a></li>
-        </ul>
-      </nav>
+      <!-- Menú eliminado: solo logo en la cabecera -->
     </div>
   </header>
-  <main>
-    <div class="hero-content">
-  <div class="hero-flex">
-    <div class="hero-col hero-texto">
-      <h1>Ford Supervan</h1>
-      <p>
-        Siente la emoción de conducir un coche que une innovación, seguridad y un estilo inconfundible.<br><br>
-        Compra hoy en Ford y accede a atención personalizada, opciones de financiamiento flexibles y entrega inmediata. ¡Haz que cada viaje sea único!
-      </p>
-      <a href="/src/personalizar.html" class="boton-principal">¡Personalízalo ahora!</a>
-    </div>
-    <div class="hero-col hero-img">
-      <img src="/images/supervan_2.jpg" alt="Coche destacado" class="img-hero-grande">
-    </div>
-  </div>
-</div>
 
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <div class="hero-flex">
+          <div class="hero-col hero-texto">
+            <h1>CUSTOM CAR SALES</h1>
+            <h1>Speedster GT: tecnología y pasión sobre ruedas</h1>
+            <p>
+              Siente la emoción de conducir un coche que une innovación, seguridad y un estilo inconfundible.<br><br>
+              Compra hoy en Ford y accede a atención personalizada, opciones de financiamiento flexibles y entrega inmediata. ¡Haz que cada viaje sea único!
+            </p>
+            <a href="personalizar.html" class="boton-principal">¡Personalízalo ahora!</a>
+          </div>
+
+          <div class="hero-col hero-img">
+            <div class="hero-img-frame">
+              <img src="supervan_2.jpg" alt="Ford Supervan" class="img-hero-grande">
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <div class="caracteristicas-modernas">
+    <section class="caracteristicas-modernas">
+      <div class="car-img-wrapper">
+        <img src="supervan_2.jpg" alt="Ford Supervan" class="car-img">
+      </div>
       <div class="caracteristicas-info">
         <h2>Características de la Ford Supervan</h2>
         <ul>
@@ -53,7 +55,7 @@
           <li>Discos de freno en fibra de carbono</li>
         </ul>
       </div>
-    </div>
+    </section>
   </main>
 </body>
 </html>
