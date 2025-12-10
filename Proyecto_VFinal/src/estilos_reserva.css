@@ -9,10 +9,6 @@ html {
   font-family: 'Montserrat', Arial, sans-serif;
   color: #EEE;
   /* Texto claro sobre fondo oscuro */
-
-  /* Fondo degradado en vez de color plano */
-  background: radial-gradient(circle at top left, #343746 0%, #111218 45%, #050509 100%);
-  min-height: 100%;
 }
 
 /* Barra superior fija con los botones Atrás y Volver a inicio */
@@ -126,7 +122,6 @@ html {
 }
 
 /* 3. Bloques principales: layout de dos columnas */
-/* 3. Bloques principales: tarjetas translúcidas tipo glass */
 .bloque-reserva,
 .bloque-comprar {
   display: flex;
@@ -135,18 +130,9 @@ html {
   max-width: 1100px;
   margin: 24px auto 0 auto;
   gap: 24px;
-
-  /* Antes: background sólido #222327 */
-  background: rgba(20, 22, 30, 0.80);
-  /* translúcido */
-  backdrop-filter: blur(14px);
-  /* efecto cristal */
-  -webkit-backdrop-filter: blur(14px);
-  /* compatibilidad Safari */
+  background: #222327;
   border-radius: 18px;
-  border: 1px solid rgba(255, 255, 255, 0.06);
-  /* borde suave */
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15);
   padding: 32px 40px;
 }
 
