@@ -1,14 +1,13 @@
-/* Fondo general tipo main page */
+/* Fondo general liso */
 body, html {
-  background: #181a1c url("supervan_bg.jpg") no-repeat center top;
-  background-size: cover;
+  background: #181a1c;
   color: #EEE !important;
   font-family: 'Montserrat', Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
-/* Cabecera solo con logo */
+/* Cabecera solo logo */
 header {
   background: rgba(34,35,39,0.95);
   box-shadow: 0 2px 6px rgba(0,0,0,0.13);
@@ -26,17 +25,20 @@ header {
   width: auto;
 }
 
-/* Eliminamos cualquier nav existente */
+/* Ocultar cualquier nav */
 nav {
   display: none;
 }
 
-/* HERO con overlay sobre el fondo */
+/* HERO con imagen de fondo y overlay */
 .hero {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(rgba(24,26,28,0.82), rgba(24,26,28,0.96));
+  background:
+    linear-gradient(rgba(24,26,28,0.82), rgba(24,26,28,0.96)),
+    url("../public/images/fondo.jpg") no-repeat center top;
+  background-size: cover;
   color: #fff;
   padding: 40px 0 60px 0;
 }
@@ -46,8 +48,8 @@ nav {
   max-width: 1200px;
   margin: 40px auto 0 auto;
   background: #222327;
-  border-radius: 22px;
-  box-shadow: 0 6px 32px rgba(0,0,0,0.32);
+  border-radius: 16px;
+  box-shadow: 0 10px 22px rgba(0,0,0,0.32);
   padding: 38px 58px;
   color: #fbfbfa;
 }
@@ -90,14 +92,14 @@ nav {
   margin-top: 0;
 }
 
-/* Botón único de avance (CTA) */
+/* Botón único de avance */
 .boton-principal {
   display: inline-block;
   margin-top: 28px;
   padding: 14px 36px;
   border-radius: 999px;
-  background: #ffe174;
-  color: #111217;
+  background: #ffffff;
+  color: #000000;
   font-weight: 700;
   text-decoration: none;
   border: 0;
@@ -109,8 +111,8 @@ nav {
 .boton-principal:hover {
   transform: translateY(-1px);
   box-shadow: 0 10px 26px rgba(0,0,0,0.45);
-  background: #ffde58;
-  color: #111217;
+  background: #00397B;
+  color: #ffffff;
 }
 
 /* Columna imagen con marco translúcido */
@@ -122,12 +124,12 @@ nav {
 
 .hero-img-frame {
   width: 100%;
-  max-width: 520px;              /* alargado en X */
-  padding: 18px 26px;
-  border-radius: 24px;
-  background: rgba(0, 0, 0, 0.35); /* overlay translúcido */
+  max-width: 520px;
+  padding: 6px 8px;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.35);
   backdrop-filter: blur(4px);
-  box-shadow: 0 8px 28px rgba(0,0,0,0.40);
+  box-shadow: 0 8px 12px rgba(0,0,0,0.40);
 }
 
 .img-hero-grande {
@@ -142,7 +144,7 @@ nav {
 .caracteristicas-modernas {
   display: flex;
   align-items: center;
-  background: rgba(34,35,39,0.96);
+  background: #222327;
   color: #fff;
   border-radius: 18px;
   box-shadow: 0 6px 24px rgba(0,0,0,0.25);
