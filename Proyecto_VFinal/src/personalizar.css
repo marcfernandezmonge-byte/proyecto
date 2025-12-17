@@ -3,16 +3,17 @@
   --fondo-rojo: linear-gradient(186deg, rgba(48, 16, 16) 0%, rgb(48, 16, 16) 100%); 
   --fondo-verde: linear-gradient(186deg, rgb(16, 48, 16) 0%,  rgb(16, 48, 16) 100%); 
 }
+
 body {
-      background: #000000;
-      background: linear-gradient(186deg, rgba(48, 16, 16) 0%, rgb(48, 16, 16) 100%);
-      font-family: 'Segoe UI', sans-serif;
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      height: 100vh;
-      overflow: hidden;
-  }
+  background: #000000;
+  background: linear-gradient(186deg, rgba(48, 16, 16) 0%, rgb(48, 16, 16) 100%);
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
   
 .barra-progreso {
   display: flex;
@@ -52,15 +53,12 @@ body {
 .paso.activo {
   background-color: #1b1b1b;
   color: #fff;
-  
 }
 
 .flecha {
   color: #888;
   font-size: 1.2em;
 }
-
-
 
 .content-container {
   display: flex;
@@ -94,7 +92,6 @@ body {
   background-color: #181a1c;
 }
 
-
 /* Panel lateral de botones */
 .panel-personalizacion {
   display: flex;
@@ -107,7 +104,7 @@ body {
   position: absolute;
   top: 20px;
   left: 20px;
-  text-decoration: none; /* ← esto quita la raya */
+  text-decoration: none;
 }
 
 .volver-container {
@@ -127,7 +124,6 @@ body {
   filter: brightness(110%);
 }
 
-
 .etiqueta {
   color: #ffffff;
   font-size: 16px;
@@ -143,7 +139,7 @@ body {
 .opcion {
   display: flex;
   align-items: center;
-  gap: 12px; /* espacio entre botón y texto */
+  gap: 12px;
 }
 
 .botonera {
@@ -170,7 +166,6 @@ body {
   width: 300px;
   height: 22.5%;
   border-left: 2px solid #353942;
-  /*margin: 24px auto 0 auto;*/
   background: rgba(34, 35, 39, 0.6);
   border: 3px solid rgba(14, 165, 233, 0.2);
   border-radius: 18px;
@@ -179,7 +174,7 @@ body {
 
 /*COLOR AZUL */
 .color1 {
-  background: linear-gradient(145deg, #1B02E7, #3a3aff); /* azul metálico */
+  background: linear-gradient(145deg, #1B02E7, #3a3aff);
   box-shadow: inset 0 0 10px rgba(255,255,255,0.2), inset 0 -2px 4px rgba(0,0,0,0.4);
   transition: transform 0.2s, background-color 2s;
   width: 80px;
@@ -189,7 +184,6 @@ body {
   font-size: 14px;
   font-weight: bold;
   cursor: pointer;
-  transition: transform 0.2s, background-color 2s;
 }
 
 /*COLOR ROJO */
@@ -222,9 +216,9 @@ body {
 
 /* RUEDA 1*/
 .rueda1 {
-  background-image: url('../public/images/rueda1.png'); /* ← aquí va la ruta */
-  background-size: cover;       /* ajusta la imagen al botón */
-  background-position: center;  /* centra la imagen */
+  background-image: url('/images/rueda1.png'); /* ruta corregida */
+  background-size: cover;
+  background-position: center;
   transition: transform 0.2s, background-color 2s;
   width: 80px;
   height: 80px;
@@ -232,15 +226,14 @@ body {
   border: none;
   font-size: 14px;
   font-weight: bold;
-  /*box-shadow: 0 4px 10px rgba(0,0,0,0.2);*/
   cursor: pointer;
 }
 
 /* RUEDA 2*/
 .rueda2 {
-  background-image: url('../public/images/rueda2.png'); /* ← aquí va la ruta */
-  background-size: cover;       /* ajusta la imagen al botón */
-  background-position: center;  /* centra la imagen */
+  background-image: url('/images/rueda2.png'); /* ruta corregida */
+  background-size: cover;
+  background-position: center;
   transition: transform 0.2s, background-color 2s;
   width: 80px;
   height: 80px;
@@ -248,7 +241,6 @@ body {
   border: none;
   font-size: 14px;
   font-weight: bold;
-  /*box-shadow: 0 4px 10px rgba(0,0,0,0.2);*/
   cursor: pointer;
   margin-top: 32px;
 }
@@ -260,9 +252,7 @@ body {
   outline-offset: 4px;
 }
 
-
-
-.border{
+.border {
   width: 86px;
   height: 86px;
   border-radius: 50%;
@@ -270,7 +260,7 @@ body {
   z-index: 0;
 }
 
-.border:hover{
+.border:hover {
   background-color: white;
 }
 
@@ -280,7 +270,6 @@ body {
 }
 
 .footer-financiero {
- /* background: #31323680;*/
   border-radius: 18px;
   background: rgba(34, 35, 39, 0.6);
   border: 3px solid rgba(14, 165, 233, 0.2);
