@@ -119,10 +119,26 @@ body {
   width: 100%;
 }*/
 
-.logo img {
-  height: 40px;
-  width: auto;
+/* Clase común para ambos logos */
+.logo-menu {
+    position: absolute;
+    width: auto;
+    top: 50%;
+    transform: translateY(-50%); /* Centrado vertical exacto */
 }
+
+/* Posición específica izquierda */
+.logo-izq {
+    left: 30px;
+    height: 40px;
+}
+
+/* Posición específica derecha */
+.logo-der {
+    right: 30px;
+    height: 60px;
+}
+
 
 .barra-progreso {
   display: flex;
@@ -459,7 +475,7 @@ body {
   text-align: center;
   padding-top: 2rem;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
-  color: #6b7280;
+  color: #a8abb3;
 }
 
 /* Animaciones */
