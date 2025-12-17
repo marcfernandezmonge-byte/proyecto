@@ -110,16 +110,19 @@ document.querySelector(".color1").addEventListener("click", () => {
   colorSeleccionado = "azul";
   cargarModelo(colorSeleccionado, ruedaSeleccionada);
   actualizarPrecio();
+  document.body.style.background = getComputedStyle(document.documentElement) .getPropertyValue("--fondo-azul");
 });
 document.querySelector(".color2").addEventListener("click", () => {
   colorSeleccionado = "rojo";
   cargarModelo(colorSeleccionado, ruedaSeleccionada);
   actualizarPrecio();
+  document.body.style.background = getComputedStyle(document.documentElement) .getPropertyValue("--fondo-rojo");
 });
 document.querySelector(".color3").addEventListener("click", () => {
   colorSeleccionado = "verde";
   cargarModelo(colorSeleccionado, ruedaSeleccionada);
   actualizarPrecio();
+  document.body.style.background = getComputedStyle(document.documentElement) .getPropertyValue("--fondo-verde");
 });
 
 // Eventos de botones de rueda
