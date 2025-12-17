@@ -15,9 +15,9 @@ body {
   align-items: center;
   gap: 12px;
   padding: 20px;
-  background-color: #23252a;
+  background-color: #39393a;
   font-family: 'Segoe UI', sans-serif;
-  border-bottom: 1px solid #353942;
+  border-bottom: 1px solid #252627;
   position: fixed;
   top: 0;
   left: 0;
@@ -28,8 +28,8 @@ body {
 .paso {
   padding: 10px 22px;
   border-radius: 999px;
-  background-color: #353942;
-  color: #aaa;
+  background-color: #d1d1d1;
+  color: #303030;
   font-weight: 600;
   font-size: 0.95em;
   text-decoration: none;
@@ -37,14 +37,15 @@ body {
 }
 
 .paso:hover {
-  background-color: #1a2a40;
+  background-color: #1b1b1b;
   color: #fff;
+  box-shadow: 0 0 8px rgba(255,255,255,0.3);
 }
 
 .paso.activo {
-  background-color: #1a2a40;
+  background-color: #1b1b1b;
   color: #fff;
-  box-shadow: 0 0 8px rgba(255,255,255,0.3);
+  
 }
 
 .flecha {
@@ -119,19 +120,6 @@ body {
   filter: brightness(110%);
 }
 
-/*.siguiente {
-  display: inline-block;
-  padding: 10px 20px;
-  background: #23252a;
-  color: #f5f7fa;
-  font-size: 0.98em;
-  font-weight: 600;
-  text-decoration: none;
-  border-radius: 999px;
-  border: 1px solid #353942;
-  transition: background .18s, color .18s, border-color .18s;
-  margin-right: -800px;
-}*/
 
 .etiqueta {
   color: #ffffff;
@@ -264,16 +252,7 @@ body {
   outline-offset: 4px;
 }
 
-/* .footer-financiero{
-  background: #31323680;
-  border-radius: 18px;
-  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15);
-  padding: 50px 500px;
-  margin-bottom: 2px;
-  border-top: 1px solid #353942;
-  color: #f5f7fa;
-  font-family: 'Segoe UI', sans-serif;
-}*/
+
 
 .border{
   width: 86px;

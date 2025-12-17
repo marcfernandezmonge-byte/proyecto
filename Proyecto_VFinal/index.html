@@ -1,61 +1,202 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CUSTOM CAR SALES - Main Page</title>
-  <link rel="stylesheet" href="src/estilos_index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ford Supervan - Innovación Eléctrica</title>
+    <meta name="description" content="Descubre el Ford Supervan, un vehículo eléctrico de alto rendimiento con 2000 CV y tecnología de vanguardia.">
+    <link rel="stylesheet" href="/src/estilos_index.css">
 </head>
 <body>
-  <header>
-    <div class="container-header">
-      <a href="index.html" class="logo">
-        <img src="public/images/logo.png" alt="Ford">
-      </a>
+    <!-- Fondo sticky con overlay tintado -->
+    <div class="background-wrapper">
+        <div class="background-image"></div>
+        <div class="background-overlay"></div>
     </div>
-  </header>
 
-  <main>
-    <section class="hero">
-      <div class="hero-content">
-        <div class="hero-flex">
-          <div class="hero-col hero-texto">
-            <h1>Ford Supervan</h1>
-            <p>
-              Siente la emoción de conducir un coche que une innovación, seguridad y un estilo inconfundible.<br><br>
-              Compra hoy en Ford y accede a atención personalizada, opciones de financiamiento flexibles y entrega inmediata. ¡Haz que cada viaje sea único!
-            </p>
-            <a href="src/personalizar.html" class="boton-principal">¡Personalízalo ahora!</a>
-          </div>
-
-          <div class="hero-col hero-img">
-            <div class="hero-img-frame">
-              <img src="public/images/images.jpg" alt="Ford Supervan" class="img-hero-grande">
-            </div>
-          </div>
+    <!-- Contenido principal -->
+    <div class="content-wrapper">
+        <!-- Navegación -->
+          <!--<a class="volver-container" href="/Proyecto_VFinal/index.html">← Atrás</a>-->
+        <div class="barra-progreso">
+          <a href="/Proyecto_VFinal/index.html" class="paso activo">Principal</a>
+          <div class="flecha">➤</div>
+          <a href="/src/personalizar.html" class="paso">Personalización</a>
+          <div class="flecha">➤</div>
+          <a href="/src/reserva_Compra.html" class="paso">Compra</a>
         </div>
-      </div>
-    </section>
 
-    <section class="caracteristicas-modernas">
-      <div class="car-img-wrapper">
-        <img src="public/images/supervan_2.jpg" alt="Ford Supervan" class="car-img">
-      </div>
-      <div class="caracteristicas-info">
-        <h2>Características de la Ford Supervan</h2>
-        <ul>
-          <li>3 motores eléctricos</li>
-          <li>2000 CV</li>
-          <li>0-100 km/h en menos de 2 segundos</li>
-          <li>Tracción 4</li>
-          <li>Velocidad punta superior a 320 kph</li>
-          <li>Neumáticos Pirelli P Zero</li>
-          <li>Discos de freno en fibra de carbono</li>
-        </ul>
-      </div>
-    </section>
-  </main>
+        <!-- Hero Section -->
+        <section id="inicio" class="hero-section">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Ford Supervan</h1>
+                    <p class="hero-subtitle">
+                        Siente la emoción de conducir un coche que une innovación,
+                        seguridad y un estilo inconfundible.
+                    </p>
+                    <p class="hero-description">
+                        Compra hoy en Ford y accede a atención personalizada, opciones
+                        de financiamiento flexibles y entrega inmediata. ¡Haz que cada
+                        viaje sea único!
+                    </p>
+                    
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-value">2000</div>
+                            <div class="stat-label">CV de potencia</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">&lt;2s</div>
+                            <div class="stat-label">0-100 km/h</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">320+</div>
+                            <div class="stat-label">km/h velocidad punta</div>
+                        </div>
+                    </div>
 
-  <script src="src/main.js"></script>
+                    <a href="/src/personalizar.html" class="cta-button">¡Personalízalo ahora!</a>
+                </div>
+                <div class="hero-image">
+                    <img src="/public/images/images.jpg" alt="Ford Supervan Red Bull">
+                </div>
+            </div>
+        </section>
+
+        <!-- Características -->
+        <section id="caracteristicas" class="features-section">
+            <div class="section-container">
+                <h2 class="section-title">Características de la Ford Supervan</h2>
+                
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <h2 class="feature-title">3 motores eléctricos</h3>
+                        <p class="feature-description">Sistema de propulsión triple para máxima potencia y eficiencia</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h2 class="feature-title">2000 CV</h3>
+                        <p class="feature-description">Potencia extrema para rendimiento profesional en pista</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h2 class="feature-title">0-100 km/h en menos de 2 segundos</h3>
+                        <p class="feature-description">Aceleración comparable a vehículos de Fórmula 1</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h2 class="feature-title">Tracción 4</h3>
+                        <p class="feature-description">Control total en cualquier condición de conducción</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h2 class="feature-title">Velocidad punta superior a 320 km/h</h3>
+                        <p class="feature-description">Aerodinámica avanzada para máxima velocidad</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h2 class="feature-title">Neumáticos Pirelli P Zero</h3>
+                        <p class="feature-description">Neumáticos de competición para máximo agarre</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h2 class="feature-title">Discos de freno en fibra de carbono</h3>
+                        <p class="feature-description">Sistema de frenado de alto rendimiento</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Especificaciones con imagen -->
+        <section id="specs" class="specs-section">
+            <div class="section-container">
+                <div class="specs-content">
+                    <div class="specs-image">
+                        <img src="/public/images/supervan_2.jpg" alt="Ford Supervan blanco">
+                    </div>
+                    <div class="specs-details">
+                        <h2 class="section-title">Especificaciones técnicas</h2>
+                        <div class="specs-list">
+                            <div class="spec-item">
+                                <span class="spec-label">Motor:</span>
+                                <span class="spec-value">3 motores eléctricos</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Potencia:</span>
+                                <span class="spec-value">2000 CV</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Aceleración:</span>
+                                <span class="spec-value">0-100 km/h en &lt;2s</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Tracción:</span>
+                                <span class="spec-value">4x4 integral</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Velocidad máxima:</span>
+                                <span class="spec-value">&gt;320 km/h</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Neumáticos:</span>
+                                <span class="spec-value">Pirelli P Zero</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Frenos:</span>
+                                <span class="spec-value">Fibra de carbono</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Final -->
+        <section class="cta-section">
+            <div class="cta-container">
+                <h2 class="cta-title">¿Listo para la experiencia definitiva?</h2>
+                <p class="cta-description">Personaliza tu Ford Supervan y descubre el futuro de la conducción eléctrica</p>
+                <a href="/src/personalizar.html" class="cta-button cta-button-large">Personalizar mi Supervan</a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer id="contacto" class="footer">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h3>Ford Supervan</h3>
+                    <p>Innovación eléctrica de alto rendimiento</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Enlaces</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#caracteristicas">Características</a></li>
+                        <li><a href="#specs">Especificaciones</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li><a href="mailto:info@ford.com">info@ford.com</a></li>
+                        <li><a href="tel:+34900000000">900 000 000</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Política de privacidad</a></li>
+                        <li><a href="#">Términos de uso</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Ford Motor Company. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+    </div>
+
+   <!-- <script src="script.js"></script>-->
 </body>
 </html>
