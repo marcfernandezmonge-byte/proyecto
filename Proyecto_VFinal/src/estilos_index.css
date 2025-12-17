@@ -118,6 +118,12 @@ body {
 .nav-links a:hover::after {
   width: 100%;
 }*/
+
+.logo img {
+  height: 40px;
+  width: auto;
+}
+
 .barra-progreso {
   display: flex;
   justify-content: center;
@@ -145,18 +151,18 @@ body {
 }
 
 .paso:hover {
-  background-color: #7ba2d8;
+  background-color: #00397B;
   color: #fff;
 }
 
 .paso.activo {
-  background-color: #1a2a40;
+  background-color: #1b1b1b;
   color: #fff;
   box-shadow: 0 0 8px rgba(255,255,255,0.3);
 }
 
 .flecha {
-  color: #888;
+  color: #ffffff;
   font-size: 1.2em;
 }
 
@@ -260,14 +266,13 @@ body {
   font-size: 1.125rem;
   border-radius: 8px;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(34, 34, 34, 0.4);
 }
 
 .cta-button:hover {
   background: #00397B;
   color: #ffffff;
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.6);
+  box-shadow: 0 6px 15px #00397B;
 }
 
 .cta-button-large {
@@ -349,7 +354,7 @@ body {
 .specs-image img {
   width: 100%;
   height: auto;
-  border-radius: 16px;
+  border-radius: 8px;
   box-shadow: 0 20px 60px rgba(14, 165, 233, 0.3);
 }
 
