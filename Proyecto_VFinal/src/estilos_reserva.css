@@ -114,7 +114,7 @@ body {
   /* Antes: background sólido #222327 */
   background: rgba(8, 12, 22, 0.72);
   /* menos opaco → más transparente */
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(6px);
   /* un poco más de blur */
   -webkit-backdrop-filter: blur(16px);
   border-radius: 18px;
