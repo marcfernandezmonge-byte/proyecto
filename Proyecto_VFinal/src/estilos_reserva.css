@@ -163,8 +163,10 @@ body {
   display: flex;
   flex-direction: column;
   gap: 14px;
-  align-items: stretch;   /* ocupan todo el ancho disponible */
-  overflow: hidden;     /* que no se salga del bloque*/
+  align-items: stretch;
+  /* ocupan todo el ancho disponible */
+  overflow: hidden;
+  /* que no se salga del bloque*/
 }
 
 /* Foto grande arriba */
@@ -337,4 +339,47 @@ button:hover {
 .footer-link:hover {
   color: #eb525c;
   text-decoration: underline;
+}
+
+.barra-progreso {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 18px 20px;
+  background-color: #39393a;
+  font-family: 'Montserrat', Arial, sans-serif;
+  border-bottom: 1px solid #252627;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 20;
+}
+
+.paso {
+  padding: 10px 22px;
+  border-radius: 999px;
+  background-color: #d1d1d1;
+  color: #303030;
+  font-weight: 600;
+  font-size: 0.95em;
+  text-decoration: none;
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.paso:hover {
+  background-color: #1b1b1b;
+  color: #fff;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+}
+
+.paso.activo {
+  background-color: #1b1b1b;
+  color: #fff;
+}
+
+.flecha {
+  color: #888;
+  font-size: 1.2em;
 }
