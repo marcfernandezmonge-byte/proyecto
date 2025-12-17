@@ -6,6 +6,10 @@ body {
   padding: 0;
   font-family: 'Montserrat', Arial, sans-serif;
   color: #EEE;
+
+  /* Imagen de fondo + degradado oscuro encima */
+  background: url("/public/images/fondo_pista.jpg") center/cover fixed no-repeat;
+  position: relative;
 }
 
 
@@ -126,19 +130,22 @@ body {
   flex-direction: row;
   align-items: flex-start;
   max-width: 1100px;
-  margin: 24px auto 0 auto;
+  margin: 110px auto 40px auto;
   gap: 24px;
 
   /* Antes: background sólido #222327 */
-  background: rgba(20, 22, 30, 0.65);
+  background: rgba(8, 12, 22, 0.72);
   /* menos opaco → más transparente */
-  backdrop-filter: blur(16px);
+  backdrop-filter: blur(20px);
   /* un poco más de blur */
   -webkit-backdrop-filter: blur(16px);
+
   border-radius: 18px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 1px solid hsla(200, 75%, 35%, 0.952);
   /* borde más visible */
-  box-shadow: 0 16px 45px rgba(0, 0, 0, 0.55);
+  box-shadow: 0 0 50px rgba(5, 58, 78, 0.651),
+    0 0 18px rgba(224, 226, 228, 0.25);
+
   padding: 32px 40px;
 }
 
@@ -166,6 +173,7 @@ body {
   align-items: stretch;
   /* ocupan todo el ancho disponible */
   overflow: hidden;
+  margin-top: 200px;
   /* que no se salga del bloque*/
 }
 
@@ -382,4 +390,59 @@ button:hover {
 .flecha {
   color: #888;
   font-size: 1.2em;
+}
+
+/* Sección inicial ocupando todo el ancho visible */
+.hero-info {
+  width: 100%;
+  max-width: none;
+  /* ya no limitada a 1100px */
+  box-sizing: border-box;
+  margin: 90px 0 40px 0;
+  /* separada de la barra y de las tarjetas */
+  padding: 80px 10vw 90px 10vw;
+  /* más alta y con márgenes laterales porcentuales */
+  background: rgba(0, 0, 0, 0.78);
+  /* franja negra casi toda la pantalla */
+  border-radius: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.7);
+  text-align: center;
+  /* centramos el contenido */
+}
+
+/* Título grande, centrado */
+.hero-info h1 {
+  margin: 0 0 20px 0;
+  font-size: 2.9em;
+  color: #f8f9fc;
+}
+
+/* Párrafo más ancho y centrado */
+.hero-info p {
+  margin: 0 auto 18px auto;
+  max-width: 720px;
+  font-size: 1.08em;
+}
+
+/* Lista centrada también */
+.hero-info ul {
+  margin: 8px auto 0 auto;
+  padding: 0;
+  max-width: 620px;
+  text-align: left;
+  /* para que las viñetas se lean bien */
+  color: #c5c9d4;
+  font-size: 1.0em;
+}
+
+/* Responsive: ajusta tamaño en pantallas pequeñas */
+@media (max-width: 800px) {
+  .hero-info {
+    padding: 50px 6vw 60px 6vw;
+  }
+
+  .hero-info h1 {
+    font-size: 2.2em;
+  }
 }
