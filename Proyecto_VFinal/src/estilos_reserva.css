@@ -11,22 +11,6 @@ body {
   background: url("/public/images/fondo_pista.jpg") center/cover fixed no-repeat;
   position: relative;
 }
-
-
-/* Barra superior fija con los botones Atrás y Volver a inicio */
-.top-bar {
-  position: sticky;
-  /* Se queda arriba cuando haces scroll */
-  top: 0;
-  z-index: 1000;
-  display: flex;
-  gap: 12px;
-  align-items: center;
-  padding: 16px 40px;
-  background: #37393b;
-  /* mismo fondo que la página */
-}
-
 /* Botones de la barra superior */
 .top-btn {
   display: inline-block;
@@ -40,7 +24,6 @@ body {
   border: 1px solid #a1a1a1;
   transition: background .18s, color .18s, border-color .18s, transform .12s;
 }
-
 /* al pasar el cursor */
 .top-btn:hover,
 .top-btn:focus {
@@ -50,7 +33,6 @@ body {
   transform: translateY(-1px);
   /* pequeño efecto de levantar el botón */
 }
-
 /* En pantallas pequeñas reducimos un poco padding y tamaño */
 @media (max-width: 700px) {
   .top-bar {
@@ -63,7 +45,6 @@ body {
     font-size: 0.9em;
   }
 }
-
 /* 2. Barra de navegación superior */
 .barra-opciones {
   display: flex;
@@ -75,7 +56,6 @@ body {
   /* Espacio entre botones */
   box-shadow: 0 2px 7px rgba(0, 0, 0, 0.11);
 }
-
 /* Contenedor para centrar o alinear el botón de volver */
 .volver-inicio-contenedor {
   max-width: 1100px;
@@ -83,7 +63,6 @@ body {
   text-align: left;
   /* o center si lo quieres centrado */
 }
-
 /* Botón/enlace para volver a inicio */
 .boton-volver {
   display: inline-block;
@@ -132,23 +111,19 @@ body {
   max-width: 1100px;
   margin: 110px auto 40px auto;
   gap: 24px;
-
   /* Antes: background sólido #222327 */
   background: rgba(8, 12, 22, 0.72);
   /* menos opaco → más transparente */
   backdrop-filter: blur(20px);
   /* un poco más de blur */
   -webkit-backdrop-filter: blur(16px);
-
   border-radius: 18px;
   border: 1px solid hsla(200, 75%, 35%, 0.952);
   /* borde más visible */
   box-shadow: 0 0 50px rgba(5, 58, 78, 0.651),
     0 0 18px rgba(224, 226, 228, 0.25);
-
   padding: 32px 40px;
 }
-
 
 
 /* Ocultar bloque (para alternar con JavaScript) */
@@ -368,7 +343,7 @@ button:hover {
 .paso {
   padding: 10px 22px;
   border-radius: 999px;
-  background-color: #d1d1d1;
+  background-color: #ffffff;
   color: #303030;
   font-weight: 600;
   font-size: 0.95em;
@@ -398,9 +373,9 @@ button:hover {
   max-width: none;
   /* ya no limitada a 1100px */
   box-sizing: border-box;
-  margin: 90px 0 40px 0;
+  margin: 270px 0 50px 0;
   /* separada de la barra y de las tarjetas */
-  padding: 80px 10vw 90px 10vw;
+  padding: 80px 10vw 100px 10vw;
   /* más alta y con márgenes laterales porcentuales */
   background: rgba(0, 0, 0, 0.78);
   /* franja negra casi toda la pantalla */
@@ -413,14 +388,14 @@ button:hover {
 
 /* Título grande, centrado */
 .hero-info h1 {
-  margin: 0 0 20px 0;
+  margin: 0 0 40px 0;
   font-size: 2.9em;
   color: #f8f9fc;
 }
 
 /* Párrafo más ancho y centrado */
 .hero-info p {
-  margin: 0 auto 18px auto;
+  margin: 0 auto 25px auto;
   max-width: 720px;
   font-size: 1.08em;
 }
